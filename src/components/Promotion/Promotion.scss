@@ -1,0 +1,22 @@
+.promotion_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .promotion_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .text {
+      font-size: 12px;
+      font-weight: 800;
+      padding: 3px;
+      &.orange {
+        background: #FB3C00;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

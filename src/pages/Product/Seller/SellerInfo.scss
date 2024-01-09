@@ -1,0 +1,102 @@
+.seller_info_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  .seller_info_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    .info {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      &.first_content {
+        width: fit-content;
+        height: fit-content;
+        border: 2px solid #2658CD;
+        border-radius: 50%;
+        .image {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          cursor: pointer;
+        }
+      }
+      &.second_content {
+        max-width: 300px;
+        min-height: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        .name {
+          font-size: 20px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+        .primary {
+          padding: 5px 20px;
+          border-radius: 5px;
+          .text {
+            font-size: 14px;
+          }
+        }
+      }
+      &.third_content {
+        width: 100%;
+        min-height: 80px;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 40px;
+        border-left: 2px solid #CACACA;
+        gap: 20px;
+        .item {
+          height: 100%;
+          width: 200px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          .variable, .value {
+            font-size: 14px;
+          }
+          .variable {
+            width: 100%;
+            max-width: 150px;
+            color: rgba(0,0,0,.4);
+          }
+          &.join {
+            width: 300px;
+          }
+          &.rating {
+            .value {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 5px;
+              .star {
+                width: 18px;
+                height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

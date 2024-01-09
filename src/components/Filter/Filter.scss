@@ -1,0 +1,117 @@
+.filter_container {
+  width: 100%;
+  max-width: 200px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  .filter_content {
+    width: 100%;
+    padding: 20px;
+    .filter_category_container,
+    .filter_price_container,
+    .filter_rating_container,
+    .filter_location_container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      .filter_category_content,
+      .filter_price_content,
+      .filter_rating_content,
+      .filter_location_content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        .title {
+          font-size: 20px;
+          font-weight: 600;
+          color: #1E46A2;
+          width: 100%;
+          text-align: left;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #CACACA;
+        }
+        .items_content {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px;
+          .location_item {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+          }
+          .rating, .category {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 5px 5px;
+            border-radius: 5px;
+            .icons {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+              gap: 2px;
+              .star {
+                width: 14px;
+                height: 14px;
+                stroke: #FFD700;
+                stroke-width: 0.5px;
+                path {
+                  fill: #FFD700;
+                }
+                &.white {
+                  path {
+                    fill: #FFFFFF;
+                  }
+                }
+              }
+            }
+            .number {
+              font-size: 14px;
+            }
+            &.active, &:hover {
+              background: #EFEFEF;
+            }
+          }
+          .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            .form_input {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: center;
+            }
+          }
+        }
+        .secondary {
+          width: 100%;
+          margin-top: 10px;
+        }
+        .plain {
+          width: 100%;
+          margin-top: 10px;
+          .text {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

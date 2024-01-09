@@ -1,0 +1,196 @@
+.button {
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  cursor: pointer;
+
+  .text {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .icon {
+    max-width: 40px;
+  }
+  &.primary {
+    background: #2658CD;
+    border: solid 1px #2658CD;
+    padding: 10px 20px;
+
+    .text {
+      color: #FFFFFF;
+    }
+    svg {
+      path {
+        fill: #FFFFFF;
+      }
+      rect {
+        fill: #2658CD;
+      }
+    }
+    &:hover {
+      background: #FFFFFF;
+
+      .text {
+        color: #2658CD;
+      }
+      svg {
+        path {
+          fill: #2658CD;
+        }
+        rect {
+          fill: #FFFFFF;
+        }
+      }
+    }
+    &.alt {
+      background: #FFFFFF;
+
+      .text {
+        color: #2658CD;
+      }
+      svg {
+        path {
+          fill: #2658CD;
+        }
+        rect {
+          fill: #FFFFFF;
+        }
+      }
+      &:hover {
+        background: #2658CD;
+        .text {
+          color: #FFFFFF;
+        }
+        svg {
+          path {
+            fill: #FFFFFF;
+          }
+          rect {
+            fill: #2658CD;
+          }
+        }
+      }
+    }
+  }
+  &.secondary {
+    background: #FB3C00;
+    border: solid 1px #FB3C00;
+    padding: 10px 20px;
+
+    .text {
+      color: #FFFFFF;
+    }
+    svg {
+      path {
+        fill: #FFFFFF;
+      }
+      rect {
+        fill: #FB3C00;
+      }
+    }
+    &:hover {
+      background: #FFFFFF;
+
+      .text {
+        color: #FB3C00;
+      }
+      svg {
+        path {
+          fill: #FB3C00;
+        }
+        rect {
+          fill: #FFFFFF;
+        }
+      }
+    }
+    &.alt {
+      background: #FFFFFF;
+
+      .text {
+        color: #FB3C00;
+      }
+      svg {
+        path {
+          fill: #FB3C00;
+        }
+        rect {
+          fill: #FFFFFF;
+        }
+      }
+      &:hover {
+        background: #FB3C00;
+        .text {
+          color: #FFFFFF;
+        }
+        svg {
+          path {
+            fill: #FFFFFF;
+          }
+          rect {
+            fill: #FB3C00;
+          }
+        }
+      }
+    }
+  }
+  &.circle {
+    background: #FFFFFF;
+    border: solid 2px #2658CD;
+    padding: 5px;
+    border-radius: 100px;
+    .text {
+      width: 20px;
+      color: #1E46A2;
+      font-weight: 800;
+    }
+    &:hover {
+      background: #EFEFEF;
+    }
+  }
+  &.disabled{
+      color: #5f5f5f;
+      background: #CCCCCC;
+      border: solid 1px #CCCCCC;
+      padding: 10px 20px;
+      cursor: unset;
+  }
+  &.plain {
+    .text {
+
+    }
+    .icon {
+
+    }
+  }
+  &.select {
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: solid 2px #CACACA;
+    padding: 10px 20px;
+
+    .text {
+      color: #000000;
+    }
+    &:hover {
+      background: #EFEFEF;
+      border: solid 2px #2658CD;
+    }
+    &.active {
+      border: solid 2px #2658CD;
+    }
+  }
+  &.disabled {
+    cursor: not-allowed;
+    background: #CACACA;
+    &:hover {
+      background: #CACACA;
+      border: solid 2px #CACACA;
+    }
+  }
+}

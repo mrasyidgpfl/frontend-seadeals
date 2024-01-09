@@ -1,0 +1,228 @@
+.card_cart_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .card_cart_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 40px;
+      box-sizing: border-box;
+      background: #FFFFFF;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      border-bottom: solid 1px #EFEFEF;
+      .header_name {
+        .name {
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+    .items_content {
+      width: 100%;
+      .card_cart_item_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        border: solid 1px #FFFFFF;
+        .card_cart_item_content {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 10px;
+          padding: 20px;
+          box-sizing: border-box;
+          .first_content {
+            width: 100%;
+            max-width: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            .image {
+              width: 100%;
+              max-width: 100px;
+              min-height: 100px;
+              object-fit: cover;
+              cursor: pointer;
+            }
+            .description {
+              width: 100%;
+              max-width: 200px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              align-items: flex-start;
+              gap: 5px;
+              .orange {
+                font-size: 10px;
+              }
+              .name {
+                width: 100%;
+                font-size: 16px;
+                font-weight: 500;
+                color: #000000;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                text-align: left;
+                min-height: 20px;
+                line-height: 20px;
+                cursor: pointer;
+              }
+              .variant {
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.5);
+              }
+            }
+          }
+          .second_content,
+          .third_content,
+          .fourth_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 100%;
+            max-width: 200px;
+            height: 100%;
+            min-height: 100px;
+            .title {
+              font-size: 18px;
+              font-weight: 500;
+              color: #000000;
+              line-height: 20px;
+            }
+            .price, .amount, .total_price {
+              color: #1E46A2;
+              line-height: 20px;
+            }
+            .price, .total_price {
+              font-size: 18px;
+              font-weight: 500;
+            }
+            .base {
+              color: #4F4F4F;
+              font-size: 14px;
+              font-weight: 600;
+              text-decoration: line-through;
+            }
+            .amount {
+              font-size: 14px;
+              font-weight: 400;
+              text-align: center;
+            }
+          }
+          .fifth_content {
+            width: 100%;
+            max-width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #FB3C00;
+            padding: 5px;
+            cursor: pointer;
+            border: solid 2px #FFFFFF;
+            .icon_delete {
+              path, rect.fill {
+                fill: #FFFFFF;
+              }
+            }
+            &:hover {
+              background: #FFFFFF;
+              border: solid 2px #FB3C00;
+              .icon_delete {
+                path, rect.fill  {
+                  fill: #FB3C00;;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.all {
+    position: fixed;
+    bottom: 0;
+    max-width: 1320px;
+    border: solid #2658CD;
+    border-width: 1px 1px 0 1px;
+    .header .header_name .name {
+      font-weight: 600;
+    }
+    .header {
+      justify-content: space-between;
+      align-items: center;
+      .left_content {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+      }
+      .right_content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 60px;
+        .total_product, .total_price {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 20px;
+          .title, .amount {
+            width: 100%;
+            font-size: 20px;
+          }
+          .title {
+            max-width: 200px;
+            font-weight: 600;
+          }
+          .base {
+            color: #4F4F4F;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: line-through;
+          }
+          .amount {
+            max-width: 400px;
+            color: #2658CD;
+          }
+        }
+      }
+    }
+  }
+}

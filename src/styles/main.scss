@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+a, p, h1, h2, h3, h5, div, th, td, span, option, label, button, form, input  {
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+  margin: 0;
+  text-decoration: none;
+}
+
+button {
+  background: #FFFFFF;
+  border: none;
+}
+
+form, input {
+  border: none;
+}
+
+.checkbox {
+  padding: 5px;
+  border: solid 2px #CACACA;
+  border-radius: 2px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  &.checked {
+    background: #FB3C00;
+    border: solid 2px #FFFFFF;
+  }
+  .icon_checked {
+    width: 16px;
+    height: 16px;
+    path {
+      fill: #FFFFFF !important;
+    }
+  }
+  &.filter {
+    padding: 2px;
+    .icon_checked {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

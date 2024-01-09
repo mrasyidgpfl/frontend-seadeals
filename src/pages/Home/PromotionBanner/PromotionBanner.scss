@@ -1,0 +1,41 @@
+.promotion_container {
+
+  .banner_container {
+    max-height: 400px;
+
+    #indicator {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+    }
+
+    .carousel-inner {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .carousel-control-prev {
+      top: 37.5%;
+      height: 100px;
+      width: 4% !important;
+      opacity: 75%;
+      background-color: #4F4F4F;
+    }
+
+    .carousel-control-prev:hover {
+      opacity: 50%;
+    }
+
+    .carousel-control-next{
+      top: 37.5%;
+      height: 100px;
+      width: 4% !important;
+      opacity: 75%;
+      background-color: #4F4F4F;
+    }
+
+    .carousel-control-next:hover {
+      opacity: 50%;
+    }
+  }
+}

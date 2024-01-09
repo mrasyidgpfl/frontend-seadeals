@@ -1,0 +1,64 @@
+.profile__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  .profile__image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: fit-content;
+    .profile__image{
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
+
+.input-container.medium{
+  width: 280px;
+}
+
+.modal_container.modal__change-password{
+  .modal_content{
+    width: fit-content;
+    padding: 42px;
+  }
+  .change-password__title{
+    color: #1E46A2;
+  }
+}
+
+.divider{
+  margin: 18px 0;
+  border-bottom: 1px dashed #bdbdbd;
+}
+
+.invalid-input{
+  margin-top: 2px;
+  color: #ff4c4c;
+  font-size: 0.8em;
+}
+
+.icon-edit {
+  cursor: pointer;
+  &:hover{
+    fill: #1E46A2;
+  }
+  &.small {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+}
+
+.caption-input{
+  font-size: 0.8em;
+}

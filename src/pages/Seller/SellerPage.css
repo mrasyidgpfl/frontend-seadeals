@@ -1,0 +1,11 @@
+.seller-avatar {
+    height: 5.5rem;
+    width: 5.5rem;
+}
+.seller-avatar img{
+    object-fit: cover;
+}
+
+.seller-info img{
+    height: 1.15rem;
+}

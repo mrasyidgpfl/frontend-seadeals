@@ -1,0 +1,29 @@
+.product_favorite_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-left: 2px solid #CACACA;
+  .product_favorite_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    .icon_heart {
+      width: 24px;
+      height: 24px;
+      &.fav {
+        path {
+          fill: #FB3C00;
+        }
+      }
+    }
+    .text {
+      font-size: 20px;
+    }
+  }
+}

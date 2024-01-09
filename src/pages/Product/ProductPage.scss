@@ -1,0 +1,168 @@
+.product_page_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #F5F5F5;
+  .product_page_content {
+    width: 100%;
+    max-width: 1440px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+    .product_header_container,
+    .product_detail_container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      .product_header_content,
+      .product_detail_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        .left_content {
+          width: 100%;
+          max-width: 550px;
+          height: 100%;
+          padding: 20px;
+          border-right: 5px solid #F5F5F5;
+          .bottom {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            gap: 20px;
+          }
+        }
+        .right_content {
+          width: 100%;
+          padding: 20px;
+        }
+      }
+      .product_detail_content {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .description_container,
+        .specification_container {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 20px;
+          .description_content,
+          .specification_content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            .description_header,
+            .specification_header {
+              width: 100%;
+              background: #EFEFEF;
+              padding: 20px;
+              .title {
+                font-size: 28px;
+                font-weight: 600;
+                color: #2658CD;
+              }
+            }
+            .description_items,
+            .specification_items {
+              width: 100%;
+              padding-left: 20px;
+              .item {
+                width: 100%;
+                .variable, .value {
+                  font-size: 18px;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .seller_product_container,
+    .similar_product_container {
+      width: 100%;
+      &.hide {
+        display: none;
+      }
+      .seller_product_content,
+      .similar_product_content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .header {
+          width: 100%;
+          text-align: left;
+          background: #FFFFFF;
+          margin-bottom: 24px;
+          padding: 20px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #EFEFEF;
+          border-radius: 10px;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          .title {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 39px;
+            color: rgba(38, 88, 205, 0.8);
+          }
+          .plain {
+            color: #2658CD;
+            .all {
+              path {
+                fill: #2658CD;
+              }
+            }
+          }
+        }
+        .items {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 24px;
+          flex-wrap: wrap;
+        }
+        .show_all {
+          margin-top: 40px;
+          width: 100%;
+          max-width: 300px;
+          min-height: 40px;
+          border: 2px solid #2658CD;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

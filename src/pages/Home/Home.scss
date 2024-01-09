@@ -1,0 +1,20 @@
+.home_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: #F5F5F5;
+  .home_content {
+    width: 100%;
+    max-width: 1440px;
+    padding: 60px 60px 60px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 40px;
+  }
+}

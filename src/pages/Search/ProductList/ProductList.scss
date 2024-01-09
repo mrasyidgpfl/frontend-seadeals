@@ -1,0 +1,19 @@
+.product_list_container {
+  width: 100%;
+  max-width: 1096px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  .product_list_content {
+    margin-top: 24px;
+    .items_content {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+  }
+}

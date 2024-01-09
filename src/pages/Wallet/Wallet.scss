@@ -1,0 +1,42 @@
+.mini-w-screen{
+  padding: 60px;
+  min-width: 480px !important;
+  max-width: 800px !important;
+  .mini-w-content{
+    min-height: 72vh !important;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    .w-content{
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .wallet__history{
+    min-height: 56vh !important;
+  }
+}
+
+.wallet-bg{
+  background: rgb(36,83,194);
+  background: linear-gradient(90deg, rgba(36,83,194,1) 0%, rgba(21,49,113,1) 100%);
+}
+
+.wallet__menu__items{
+     aspect-ratio: 1/1;
+     width: 4.5rem;
+     text-align: center;
+ }
+
+ .wallet__menu__items img{
+     height: 1.75rem;
+     margin-bottom: 0.325rem;
+     border: 2px solid #1E46A2 !important;
+     border-radius: 25%;
+ }
+
+.wallet_accounts_item:not(:last-child){
+    margin-bottom: 0.6rem!important;
+}

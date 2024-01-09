@@ -1,0 +1,23 @@
+.specification_container {
+  .specification_content {
+    .specification_items {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 10px;
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        .variable {
+          width: 100%;
+          max-width: 150px;
+          color: rgba(0,0,0,.4);
+        }
+      }
+    }
+  }
+}

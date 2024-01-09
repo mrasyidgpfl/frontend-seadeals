@@ -1,0 +1,28 @@
+.modal_content .modal_payment_window{
+  min-width: 528px;
+}
+
+.slp_list_transition{
+  transition: all 0.35s;
+}
+
+.slp_list_open{
+  max-height: 226px;
+  overflow-y: scroll;
+}
+
+.slp_list_close{
+  height: 72px;
+  overflow-y: hidden;
+}
+
+.slp_item_selected{
+  background: #2658cd21;
+}
+
+.modal_container.payment {
+  .modal_content {
+    width: 40%;
+  }
+}
+

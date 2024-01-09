@@ -1,0 +1,109 @@
+.card_product_list_container {
+  width: 100%;
+  max-width: 200px;
+  min-height: 337px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  border: solid 1px #FFFFFF;
+  cursor: pointer;
+  .card_product_list_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .image {
+      width: 194px;
+      height: 194px;
+      margin: 2px;
+      object-fit: cover;
+    }
+    .name_content {
+      min-height: 30px;
+      margin: 10px;
+      max-width: 180px;
+      .name {
+        font-weight: 400;
+        font-size: 12px;
+        color: #000000;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        line-height: 15px;
+        min-height: 30px;
+        text-align: left;
+      }
+    }
+    .center_content {
+      min-height: 16px;
+      margin: 0 10px;
+    }
+    .price_container {
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .price_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .currency, .price, .connector {
+          font-weight: 400;
+          color: #1E46A2;
+        }
+        .currency {
+          font-size: 10px;
+          line-height: 12px;
+        }
+        .price, .connector {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+    .bottom_content {
+      width: 100%;
+      max-width: 180px;
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      .rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 16px;
+        .iconRating {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .sold_count {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        color: #000000;
+      }
+    }
+    .city {
+      margin: 10px;
+      color: rgba(0,0,0,.65);
+      font-size: 12px;
+      line-height: 18px;
+      font-weight: 200;
+    }
+  }
+  &:hover {
+    border: solid 1px #1E46A2;
+  }
+}

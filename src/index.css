@@ -1,0 +1,174 @@
+:root {
+  --primary-blue: #2658CD;
+  --secondary-blue: #1E46A2;
+  --accent-red: #FB3C00;
+  --main-gray: #F5F5F5;
+  --white: #ffffff;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-gray);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+.main-content{
+  padding-top: 6.5rem;
+}
+.bg-main{
+  background-color: var(--primary-blue) !important;
+}
+.bg-secondary{
+  background-color: var(--secondary-blue) !important;
+}
+.bg-accent{
+  background-color: var(--accent-red) !important;
+}
+.bg-backdrop{
+  background-color: var(--main-gray) !important;
+}
+.bg-lightgray{
+  background-color: #f3f4f5 !important;
+}
+.bg-gray{
+  background-color: #ececec !important;
+}
+.bg-darkgray{
+  background-color: #bdbdbd !important;
+}
+.bg-gray-trans{
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+.bg-disabled{
+  background-color: #CACACA;
+}
+.text-accent{
+  color: var(--accent-red) !important;
+}
+.text-backdrop{
+  color: var(--main-gray) !important;
+}
+.text-main{
+  color: var(--primary-blue) !important;
+}
+.text-secondary-blue{
+  color: var(--secondary-blue) !important;
+}
+.border-main{
+  border-color: var(--primary-blue) !important;
+}
+.normal-link a{
+  color: inherit;
+  text-decoration: none;
+}
+.rounder{
+  border-radius: .45rem;
+}
+
+.hover-click{
+  cursor: pointer;
+}
+.bg-inherit{
+  background-color: inherit;
+}
+
+.trx-icon{
+  height: 2rem;
+}
+
+.saved-slp-box{
+  max-height: 5rem;
+  overflow-y: scroll;
+}
+
+.border-bottom-dashed{
+  border-bottom: 1px #c5c5c5 dashed !important;
+}
+.border-top-dashed{
+  border-top: 1px #ececec dashed !important;
+}
+
+.mini-w-screen{
+  min-width: 480px !important;
+  max-width: 680px !important;
+}
+
+.pin-input input{
+  width: 5%;
+}
+
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.form__input {
+  position: relative;
+  float: left;
+  width: 100%;
+  display: table-cell;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.suffix input {
+  border-radius: 4px 0px 0px 4px;
+}
+.suffix .input-group-addon {
+  border-left: 0;
+  border-radius: 0px 4px 4px 0px;
+}
+.prefix input {
+  border-radius: 0px 4px 4px 0px;
+}
+.prefix .input-group-addon {
+  border-right: 0;
+  border-radius: 4px 0px 0px 4px;
+}
+.presuffix input {
+  border-radius: 0px;
+}
+.input-group-addon.prefix {
+  border-radius: 4px 0px 0px 4px;
+  border-right: 0;
+}
+.input-group-addon.suffix {
+  border-radius: 0px 4px 4px 0px;
+  border-left: 0;
+}
+.input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  border-radius: 8px;
+}
+
+.input-group .small{
+  width: 172px;
+}

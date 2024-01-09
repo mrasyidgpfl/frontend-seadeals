@@ -1,0 +1,81 @@
+.login_container {
+  margin: 0;
+  padding-top: 4.5rem;
+  min-height: 88vh;
+  background-color: #1E46A2;
+}
+.login_cards_container {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+
+  .logo {
+    text-align: center;
+    border-right: 5px solid #1E46A2;
+    align-content: center;
+  }
+
+  .register-logo-l {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  hr.horizontal-line {
+    width: 100%;
+    position: relative !important;
+    border: 5px solid #1E46A2;
+    background-color: #1E46A2;
+  }
+
+  .logo-m {
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid #1E46A2;
+  }
+
+  .header {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 0;
+    color: #2658CD;
+  }
+}
+
+#daftar-text {
+  font-size: 15px;
+}
+#daftar-link {
+  color: #2658CD;
+  font-size: 15px;
+}
+.hr-sect {
+  font-size: 12px;
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.35);
+  margin: 8px 0px;
+  &::before {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+  }
+  &::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 8px;
+  }
+}

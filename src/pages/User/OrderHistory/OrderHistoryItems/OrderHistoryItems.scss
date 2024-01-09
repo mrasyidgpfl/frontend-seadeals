@@ -1,0 +1,29 @@
+.order-history-items_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .order-history-items_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .empty {
+      padding: 60px 0;
+      .text {
+        font-size: 40px;
+        font-weight: 600;
+      }
+    }
+    .items {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+}

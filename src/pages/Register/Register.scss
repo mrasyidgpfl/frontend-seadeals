@@ -1,0 +1,127 @@
+.register_container {
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #1E46A2;
+
+  .password-vis-button {
+      cursor: pointer;
+  }
+
+  .register_cards_container {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1000px;
+
+    .register_cards {
+      width: 100%;
+
+      .logo {
+        text-align: center;
+        border-right: 5px solid #1E46A2;
+        align-content: center;
+      }
+
+      .register-logo-l {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      hr.horizontal-line {
+        width: 100%;
+        position: relative !important;
+        border: 5px solid #1E46A2;
+        background-color: #1E46A2;
+      }
+
+      .logo-m {
+        text-align: center;
+        position: relative;
+        border-bottom: 5px solid #1E46A2;
+      }
+
+      .header {
+        font-size: 35px;
+        text-align: center;
+        margin-top: 0;
+        color: #2658CD;
+      }
+
+      .form-control {
+        font-size: 15px;
+        background-color: #F2F2F2;
+      }
+
+      .input-group-prepend {
+        height: 36.5px;
+      }
+
+      .form-select {
+        width: 100%;
+        font-size: 15px;
+        border: 1px solid #ced4da;
+        padding-left: 0.5rem;
+        color: #495057;
+      }
+
+      .card-right-side {
+        background-color: #1E46A2;
+      }
+
+      .register-button {
+        background-color: #F69113;
+        color: #FFFFFF;
+        border: 3rem;
+        border-radius: 5px;
+        width: 100%;
+        height: 35px;
+        font-size: 15px;
+        text-align: center !important;
+        display: inline-block;
+      }
+
+      .birth-date {
+        font-size: 10px;
+      }
+
+      button.google-button {
+        height: 45px;
+        width: 100%;
+        border: 2px solid #F69113 !important;
+        text-align: center !important;
+        display: inline-block;
+      }
+
+      div.vertical-line{
+        width: 5px;
+        background-color: #1E46A2;
+        float: left;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      .register-form-header-m {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0;
+        color: #2658CD;
+        border-right: #2658CD;
+      }
+
+      form i {
+        margin-left: -30px;
+        cursor: pointer;
+      }
+
+      #invalid-password, #invalid-username {
+        font-size: 10px;
+      }
+    }
+  }
+}

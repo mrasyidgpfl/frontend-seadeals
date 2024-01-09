@@ -1,0 +1,174 @@
+.modal-review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+  gap: 10px;
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2658CD;
+    margin-bottom: 20px;
+  }
+  .seller_info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 10px;
+    border-top: solid 1px #CACACA;
+    border-bottom: solid 1px #CACACA;
+    margin-bottom: 10px;
+    .name {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .total-product {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    .product_content {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px;
+      background-color: rgb(38, 88, 205, 0.1);
+      .image_content {
+        width: 100%;
+        max-width: 100px;
+        height: 100px;
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .name {
+        width: 100%;
+        padding: 0 10px;
+        font-size: 16px;
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        line-height: 20px;
+        min-height: 18px;
+        text-align: left;
+      }
+    }
+    .form_content {
+      width: 100%;
+      padding: 0 10px;
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .rating_content,
+      .description_content,
+      .photo_content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .label {
+          width: 100%;
+          max-width: 100px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .rating {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 10px;
+          .star {
+            width: 30px;
+            height: 30px;
+            stroke: #FFD700;
+            stroke-width: 0.5px;
+            cursor: pointer;
+            path {
+              fill: #FFD700;
+            }
+            &.white {
+              path {
+                fill: #FFFFFF;
+              }
+            }
+          }
+        }
+        .description {
+          width: 100%;
+          min-height: 100px;
+          resize: none;
+          padding: 10px;
+        }
+        .photo {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border: solid 2px #2658CD;
+          cursor: pointer;
+          .add {
+            font-size: 30px;
+            font-weight: 700;
+            color: #2658CD;
+          }
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .photo_input {
+            display: none;
+          }
+        }
+        .change {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+}
+
+.modal_container.review {
+  .modal_content {
+    width: 100%;
+  }
+}

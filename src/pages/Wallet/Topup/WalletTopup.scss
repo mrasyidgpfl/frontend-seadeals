@@ -1,0 +1,20 @@
+.slp-window{
+  border: 1px #ddd solid;
+  border-radius: 1.25%;
+  min-width: 616px !important;
+  max-width: 616px !important;
+  min-height: 720px !important;
+}
+
+
+.slp-transition{
+  transition: all 0.35s;
+}
+.slp-list-close{
+  max-height: 77px !important;
+  overflow: hidden;
+}
+.slp-list-open{
+  max-height: 268px !important;
+  overflow-y: scroll;
+}
